@@ -6,7 +6,7 @@ public class GameData
     public GameData()
     {
         levelUnlock[0] = true;
-        levelUnlock[1] = false;
+        levelUnlock[1] = true;
         levelUnlock[2] = false;
         levelUnlock[3] = false;
         levelUnlock[4] = false;
