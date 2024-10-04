@@ -1,10 +1,22 @@
 public class GameData
 {
+    public int carrot;
+    public int clover;
+    
     public bool[] levelUnlock = new bool[9];
     public bool[] levelCompleted = new bool[9];
+
+    public bool purchasedMegaJump;
+    public bool purchasedProtective;
+
+    public bool[] purchasedRabbit = new bool[4];
+    public bool[] selectedRabbit = new bool[4];
     
     public GameData()
     {
+        carrot = 0;
+        clover = 1000;
+        
         levelUnlock[0] = true;
         levelUnlock[1] = true;
         levelUnlock[2] = false;
@@ -24,5 +36,19 @@ public class GameData
         levelCompleted[6] = false;
         levelCompleted[7] = false;
         levelCompleted[8] = false;
+
+        purchasedMegaJump = false;
+        purchasedProtective = false;
+
+        purchasedRabbit[0] = true;
+        purchasedRabbit[1] = false;
+        purchasedRabbit[2] = false;
+        purchasedRabbit[3] = false;
+
+        selectedRabbit[0] = true;
+        selectedRabbit[1] = false;
+        selectedRabbit[2] = false;
+        selectedRabbit[3] = false;
+
     }
 }
