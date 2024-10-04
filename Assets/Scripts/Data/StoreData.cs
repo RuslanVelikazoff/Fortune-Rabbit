@@ -28,6 +28,9 @@ public class StoreData : MonoBehaviour
     
     private void Start()
     {
+        PlayerPrefs.GetInt("SelectedRabbit", 0);
+        PlayerPrefs.GetInt("PurchasedMegaJump", 0);
+        PlayerPrefs.GetInt("PurchasedProtective", 0);
         Load();
     }
 
@@ -56,6 +59,7 @@ public class StoreData : MonoBehaviour
         _purchasedMegaJump = data.purchasedMegaJump;
         _purchasedProtective = data.purchasedProtective;
         _purchasedRabbit = data.purchasedRabbit;
+        _selectedRabbit = data.selectedRabbit;
     }
 
     private void Save()
@@ -70,7 +74,8 @@ public class StoreData : MonoBehaviour
         {
             purchasedMegaJump = _purchasedMegaJump,
             purchasedProtective = _purchasedProtective,
-            purchasedRabbit = _purchasedRabbit
+            purchasedRabbit = _purchasedRabbit,
+            selectedRabbit = _selectedRabbit
         };
 
         return data;
@@ -91,13 +96,46 @@ public class StoreData : MonoBehaviour
         return _purchasedRabbit[index];
     }
 
+    public bool GetSelectedRabbit(int index)
+    {
+        return _selectedRabbit[index];
+    }
+
     public void BuyMegaJump()
     {
         _purchasedMegaJump = true;
+        PlayerPrefs.SetInt("PurchasedMegaJump", 1);
+        Save();
     }
 
     public void BuyProtective()
     {
         _purchasedProtective = true;
+        PlayerPrefs.SetInt("PurchasedProtective", 1);
+        Save();
+    }
+
+    public void BuyRabbit(int index)
+    {
+        _purchasedRabbit[index] = true;
+        SelectRabbit(index);
+        Save();
+    }
+
+    public void SelectRabbit(int index)
+    {
+        for (int i = 0; i < _selectedRabbit.Length; i++)
+        {
+            if (i == index)
+            {
+                _selectedRabbit[i] = true;
+                PlayerPrefs.SetInt("SelectedRabbit", i);
+            }
+            else
+            {
+                _selectedRabbit[i] = false;
+            }
+        }
+        Save();
     }
 }
