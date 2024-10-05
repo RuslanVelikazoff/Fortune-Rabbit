@@ -47,13 +47,15 @@ public class HealthBar : MonoBehaviour
 
     public void DamagePlayer(int damage)
     {
+        AudioManager.Instance.Play("Damage");
+        
         currentHealth -= damage;
         
         UpdateHealthBarValue();
 
         if (currentHealth <= 0)
         {
-            //Lose
+            GameManager.Instance.LoseGame();
         }
     }
 }

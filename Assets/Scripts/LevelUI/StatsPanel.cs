@@ -32,13 +32,16 @@ public class StatsPanel : MonoBehaviour
 
     public void CollectCarrot()
     {
+        AudioManager.Instance.Play("Collect");
         int amount = Random.Range(1, 10);
         carrot += amount;
         SetStatsText();
+        Debug.Log(carrot);
     }
 
     public void CollectClover()
     {
+        AudioManager.Instance.Play("Collect");
         clover++;
         SetStatsText();
     }

@@ -87,7 +87,7 @@ public class LevelData : MonoBehaviour
 
         if (index < _levelUnlock.Length)
         {
-            _levelUnlock[index] = true;
+            _levelUnlock[index + 1] = true;
         }
     }
 }

@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         if (currentLevel != maxLevel)
         {
-            Loader.Load("Level" + currentLevel);
+            Loader.Load("Level" + (currentLevel + 1));
         }
         else
         {

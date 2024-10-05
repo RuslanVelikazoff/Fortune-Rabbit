@@ -15,10 +15,10 @@ public class GameData
     public GameData()
     {
         carrot = 0;
-        clover = 1000;
+        clover = 0;
         
         levelUnlock[0] = true;
-        levelUnlock[1] = true;
+        levelUnlock[1] = false;
         levelUnlock[2] = false;
         levelUnlock[3] = false;
         levelUnlock[4] = false;
