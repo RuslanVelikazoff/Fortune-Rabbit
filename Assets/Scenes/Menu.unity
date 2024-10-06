@@ -2479,13 +2479,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 97690c1ed4b856b4784bf49f000ed849, type: 3}
     loop: 1
     volume: 0
     pitch: 0
     source: {fileID: 0}
   - name: Click
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: b17589b0bb560f94c9d7cd7c1fcbc62f, type: 3}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Collect
+    clip: {fileID: 8300000, guid: d15b067c86251b84d827271c507d2ec6, type: 3}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: 06628460ef06d224985430cbf545c278, type: 3}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 8300000, guid: faaa968287286f74c9136fbd126d844a, type: 3}
+    loop: 0
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 8300000, guid: 9d46d19d7817ac2438d56749fa9f0ed2, type: 3}
     loop: 0
     volume: 0
     pitch: 0
@@ -6240,7 +6264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -317.28998}
+  m_AnchoredPosition: {x: 0, y: -317.29004}
   m_SizeDelta: {x: 913.25, y: 209.28003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745735503
@@ -9058,7 +9082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 969914417258843584, guid: 3d492b47e987f5b429afe61fd6422d3f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -106.32001
+      value: -106.32007
       objectReference: {fileID: 0}
     - target: {fileID: 969914417258843584, guid: 3d492b47e987f5b429afe61fd6422d3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9213,7 +9237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -181.70999, y: -71.839905}
+  m_AnchoredPosition: {x: -181.70999, y: -71.83984}
   m_SizeDelta: {x: 363.43, y: 143.68994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1195748094
@@ -16707,7 +16731,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -181.70999, y: -71.84003}
+  m_AnchoredPosition: {x: -181.70999, y: -71.84009}
   m_SizeDelta: {x: 363.43, y: 143.68994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1968128638

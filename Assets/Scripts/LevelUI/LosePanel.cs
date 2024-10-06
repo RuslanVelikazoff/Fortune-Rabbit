@@ -8,6 +8,11 @@ public class LosePanel : MonoBehaviour
     [SerializeField] 
     private Button menuButton;
 
+    private void Awake()
+    {
+        LoseButtonClickAction();
+    }
+
     private void LoseButtonClickAction()
     {
         if (restartButton != null)
